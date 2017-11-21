@@ -1,0 +1,7 @@
+<h1><%= @task.name%></h1>
+
+<p><%= @task.done ? "Done" : "Not done yet"%></p>
+<%= link_to "Mark as done", task_done_path %>
+<p>Created at <%=@task.created_at%></p>
+<p>Updated at <%=@task.updated_at%></p>
+<%= link_to "< Retour à l'index", tasks_path %>
